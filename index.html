@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ilaol Foundation</title>
+</head>
+
+<body>
+    <h1>ILAOL Foundation</h1>
+
+    <img src="/assets/brz.jpeg" >
+    <div class="links">
+        <div id="clock">00:00:00</div>
+        <a>São Paulo</a>
+    </div>
+    
+
+    <p class="links">
+        <a href="/pages/CoolImages/index.html">Sobre</a>
+        //
+        <a href="/pages/CoolImages/index.html">Imagens</a>
+        //
+        <a href="/pages/livros/">Livros</a>
+        //
+        
+        <a href="https://www.google.com">Acessar Google</a>
+    </p>
+
+</body>
+
+<script>
+    function HH() {
+        const agora = new Date();
+        document.getElementById('clock').textContent = agora.toLocaleTimeString('pt-BR');
+    }
+    setInterval(HH, 1000);
+    HH();
+</script>
+<style>
+    body {
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+</style>
+</html>
